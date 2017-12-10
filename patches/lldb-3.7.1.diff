@@ -1,0 +1,12 @@
+diff --git a/source/Plugins/Process/Linux/NativeThreadLinux.h b/source/Plugins/Process/Linux/NativeThreadLinux.h
+index 289387bad..e0d56aa0a 100644
+--- a/source/Plugins/Process/Linux/NativeThreadLinux.h
++++ b/source/Plugins/Process/Linux/NativeThreadLinux.h
+@@ -15,6 +15,7 @@
+ 
+ #include <map>
+ #include <string>
++#include <functional>
+ 
+ namespace lldb_private {
+ namespace process_linux {
