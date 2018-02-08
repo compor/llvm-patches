@@ -1,0 +1,11 @@
+--- a/usr/share/llvm-3.8/cmake/LLVMExports.cmake	2018-02-12 15:41:45.552681410 +0000
++++ b/usr/share/llvm-3.8/cmake/LLVMExports.cmake	2018-02-12 17:52:33.425480913 +0000
+@@ -53,6 +53,8 @@
+ get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
+ get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
+ 
++set(_IMPORT_PREFIX "/usr/lib/llvm-3.8/")
++
+ # Create imported target LLVMSupport
+ add_library(LLVMSupport STATIC IMPORTED)
+ 

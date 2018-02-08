@@ -1,0 +1,80 @@
+--- a/usr/share/llvm-3.8/cmake/LLVMExports-relwithdebinfo.cmake	2018-02-12 17:57:17.739865497 +0000
++++ b/usr/share/llvm-3.8/cmake/LLVMExports-relwithdebinfo.cmake	2018-02-12 17:30:05.206133586 +0000
+@@ -1164,34 +1164,34 @@
+ list(APPEND _IMPORT_CHECK_TARGETS LLVMLibDriver )
+ list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMLibDriver "${_IMPORT_PREFIX}/lib/libLLVMLibDriver.a" )
+ 
+- Import target "PollyISL" for configuration "RelWithDebInfo"
+-set_property(TARGET PollyISL APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+-set_target_properties(PollyISL PROPERTIES
+-  IMPORTED_LOCATION_RELWITHDEBINFO "${_IMPORT_PREFIX}/lib/libPollyISL.a"
+-  )
+-
+-list(APPEND _IMPORT_CHECK_TARGETS PollyISL )
+-list(APPEND _IMPORT_CHECK_FILES_FOR_PollyISL "${_IMPORT_PREFIX}/lib/libPollyISL.a" )
+-
+- Import target "Polly" for configuration "RelWithDebInfo"
+-set_property(TARGET Polly APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+-set_target_properties(Polly PROPERTIES
+-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
+-  IMPORTED_LOCATION_RELWITHDEBINFO "${_IMPORT_PREFIX}/lib/libPolly.a"
+-  )
+-
+-list(APPEND _IMPORT_CHECK_TARGETS Polly )
+-list(APPEND _IMPORT_CHECK_FILES_FOR_Polly "${_IMPORT_PREFIX}/lib/libPolly.a" )
+-
+- Import target "LLVMPolly" for configuration "RelWithDebInfo"
+-set_property(TARGET LLVMPolly APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+-set_target_properties(LLVMPolly PROPERTIES
+-  IMPORTED_LOCATION_RELWITHDEBINFO "${_IMPORT_PREFIX}/lib/LLVMPolly.so"
+-  IMPORTED_SONAME_RELWITHDEBINFO "LLVMPolly.so"
+-  )
++# Import target "PollyISL" for configuration "RelWithDebInfo"
++#set_property(TARGET PollyISL APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
++#set_target_properties(PollyISL PROPERTIES
++  #IMPORTED_LOCATION_RELWITHDEBINFO "${_IMPORT_PREFIX}/lib/libPollyISL.a"
++  #)
++
++#list(APPEND _IMPORT_CHECK_TARGETS PollyISL )
++#list(APPEND _IMPORT_CHECK_FILES_FOR_PollyISL "${_IMPORT_PREFIX}/lib/libPollyISL.a" )
++
++# Import target "Polly" for configuration "RelWithDebInfo"
++#set_property(TARGET Polly APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
++#set_target_properties(Polly PROPERTIES
++  #IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
++  #IMPORTED_LOCATION_RELWITHDEBINFO "${_IMPORT_PREFIX}/lib/libPolly.a"
++  #)
++
++#list(APPEND _IMPORT_CHECK_TARGETS Polly )
++#list(APPEND _IMPORT_CHECK_FILES_FOR_Polly "${_IMPORT_PREFIX}/lib/libPolly.a" )
++
++# Import target "LLVMPolly" for configuration "RelWithDebInfo"
++#set_property(TARGET LLVMPolly APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
++#set_target_properties(LLVMPolly PROPERTIES
++  #IMPORTED_LOCATION_RELWITHDEBINFO "${_IMPORT_PREFIX}/lib/LLVMPolly.so"
++  #IMPORTED_SONAME_RELWITHDEBINFO "LLVMPolly.so"
++  #)
+ 
+-list(APPEND _IMPORT_CHECK_TARGETS LLVMPolly )
+-list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMPolly "${_IMPORT_PREFIX}/lib/LLVMPolly.so" )
++#list(APPEND _IMPORT_CHECK_TARGETS LLVMPolly )
++#list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMPolly "${_IMPORT_PREFIX}/lib/LLVMPolly.so" )
+ 
+ # Import target "LTO" for configuration "RelWithDebInfo"
+ set_property(TARGET LTO APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+@@ -1324,12 +1324,12 @@
+ # Import target "LLVM" for configuration "RelWithDebInfo"
+ set_property(TARGET LLVM APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+ set_target_properties(LLVM PROPERTIES
+-  IMPORTED_LOCATION_RELWITHDEBINFO "${_IMPORT_PREFIX}/lib/libLLVM-3.8.so.1"
+-  IMPORTED_SONAME_RELWITHDEBINFO "libLLVM-3.8.so.1"
++  IMPORTED_LOCATION_RELWITHDEBINFO "${_IMPORT_PREFIX}/lib/libLLVM-3.8.so"
++  IMPORTED_SONAME_RELWITHDEBINFO "libLLVM-3.8.so"
+   )
+ 
+ list(APPEND _IMPORT_CHECK_TARGETS LLVM )
+-list(APPEND _IMPORT_CHECK_FILES_FOR_LLVM "${_IMPORT_PREFIX}/lib/libLLVM-3.8.so.1" )
++list(APPEND _IMPORT_CHECK_FILES_FOR_LLVM "${_IMPORT_PREFIX}/lib/libLLVM-3.8.so" )
+ 
+ # Import target "llvm-dis" for configuration "RelWithDebInfo"
+ set_property(TARGET llvm-dis APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
